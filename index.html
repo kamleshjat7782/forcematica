@@ -44,39 +44,8 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=20260731-2" rel="stylesheet">
 
-  <style>
-
-      .hero {
-        padding: 0px !important;
-      }
-      .hero, .section {
-          padding-top: 0px;
-       }
-
-      .demo-card {
-        border: 1px solid rgba(13, 110, 253, 0.12);
-        border-radius: 16px;
-        background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
-        box-shadow: 0 12px 30px rgba(13, 110, 253, 0.08);
-        min-height: 100%;
-      }
-
-      .demo-card .icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background: rgba(13, 110, 253, 0.1);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: #0d6efd;
-        margin-bottom: 12px;
-      }
-  
-  </style>
-  
 </head>
 
 <body class="index-page">
@@ -119,8 +88,7 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+      <a class="header-cta d-none d-md-inline-flex" href="#contact">Book a Call <i class="bi bi-arrow-up-right"></i></a>
 
     </div>
   </header>
@@ -128,20 +96,35 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
+    <section id="hero" class="hero section hero-premium">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
-            <h1>Empowering businesses with Salesforce</h1>
-            <p>Forcematica delivers Salesforce-powered digital transformation</p>
-            <div class="d-flex">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <p class="eyebrow">Salesforce consulting, delivery &amp; support</p>
+            <h1>Make Salesforce your team’s unfair advantage.</h1>
+            <p class="hero-copy">We design practical Salesforce solutions that connect your teams, simplify work, and create better customer experiences.</p>
+            <div class="hero-actions d-flex flex-wrap align-items-center">
               <a href="#contact" class="btn-get-started">Book a Discovery Call</a>
-              <a href="#services" class="btn-watch-video d-flex align-items-center"><i class="bi bi-chat-left-text"></i><span>Explore Services</span></a>
+              <a href="#services" class="btn-watch-video d-flex align-items-center"><span>Explore services</span><i class="bi bi-arrow-right"></i></a>
             </div>
+            <ul class="hero-proof list-unstyled mb-0">
+              <li><i class="bi bi-check2-circle"></i> Strategy aligned to business goals</li>
+              <li><i class="bi bi-check2-circle"></i> Build, integration, and continuous improvement</li>
+            </ul>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/Banner_image_forcematica_salesforce.png" class="img-fluid animated" alt="Forcematica Salesforce digital transformation hero banner">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="hero-workspace" aria-label="Salesforce transformation workflow">
+              <div class="workspace-topline"><span>YOUR SALESFORCE ROADMAP</span><i class="bi bi-three-dots"></i></div>
+              <div class="workspace-title"><span class="workspace-orb"><i class="bi bi-cloud-check"></i></span><div><strong>Connected customer journeys</strong><small>From first lead to long-term loyalty</small></div></div>
+              <div class="workspace-flow">
+                <div><i class="bi bi-bullseye"></i><span>Discover</span><small>Goals &amp; process</small></div>
+                <i class="bi bi-arrow-right flow-arrow"></i>
+                <div><i class="bi bi-diagram-3"></i><span>Deliver</span><small>Build &amp; integrate</small></div>
+                <i class="bi bi-arrow-right flow-arrow"></i>
+                <div><i class="bi bi-graph-up-arrow"></i><span>Improve</span><small>Measure &amp; optimize</small></div>
+              </div>
+              <div class="workspace-footer"><span><i class="bi bi-shield-check"></i> Built for adoption</span><span><i class="bi bi-lightning-charge"></i> Ready to scale</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -188,9 +171,9 @@
     <!-- Demo Section -->
     <section id="demo-section" class="section light-background">
       <div class="container section-title" data-aos="fade-up">
-        <span>What We Do Best</span>
-        <h2>Practical Salesforce Solutions</h2>
-        <p>From CRM strategy to implementation and support, we help teams unlock growth with smarter Salesforce experiences.</p>
+        <span>How we help</span>
+        <h2>Practical, outcome-led Salesforce</h2>
+        <p>Choose the support you need now, with a partner who can stay with you as your Salesforce roadmap grows.</p>
       </div>
 
       <div class="container">
@@ -198,22 +181,22 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="demo-card p-4">
               <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
-              <h3>Salesforce Strategy</h3>
-              <p>Align your CRM roadmap with business goals and unlock better visibility across sales and service teams.</p>
+              <h3>Plan with purpose</h3>
+              <p>Turn business priorities into a focused CRM roadmap, with the right data, process, and adoption plan from day one.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="demo-card p-4">
               <div class="icon"><i class="bi bi-boxes"></i></div>
-              <h3>Implementation & Automation</h3>
-              <p>Deploy scalable Salesforce solutions with process automation, workflow design, and clean data foundations.</p>
+              <h3>Build for real work</h3>
+              <p>Implement connected workflows, useful automation, and reliable integrations your teams will actually use.</p>
             </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="demo-card p-4">
               <div class="icon"><i class="bi bi-headset"></i></div>
-              <h3>Support & Optimization</h3>
-              <p>Keep your systems running smoothly with long-term support, enhancements, and performance tuning.</p>
+              <h3>Keep improving</h3>
+              <p>Stay responsive to changing needs with dependable support, targeted enhancements, and measurable optimization.</p>
             </div>
           </div>
         </div>
@@ -225,35 +208,25 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>About Us<br></span>
-        <h2>About</h2>
-        <p>Driving innovation and efficiency across your business</p>
+        <span>Why Forcematica</span>
+        <h2>Technology that feels simpler</h2>
+        <p>We combine business context with hands-on Salesforce expertise—so change feels manageable, not disruptive.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://forcematica.com/assets/img/forcematica second banner Image.png" class="img-fluid" alt="">
-            <!--Need to add Youtibe link   // Added bY Rahul Yadav  on date - 16 july 2025-->
-            <a href="https://forcematica.com" class="glightbox pulsating-play-btn"></a>
+            <img src="assets/img/forcematica second banner Image.png" class="img-fluid" alt="Forcematica team collaborating on Salesforce solutions">
           </div>
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Forcematica Technologies</h3>
-            <p class="fst-italic">
-              At Forcematica, we are a team of passionate Salesforce experts committed to helping businesses achieve digital transformation through the power of Salesforce. With expertise in B2B Commerce Cloud, Sales Cloud, Service Cloud, and more. 
-            </p>
+            <h3>One partner, from first workshop to the next improvement.</h3>
+            <p class="fst-italic">Forcematica helps businesses make better use of Salesforce across sales, service, commerce, and customer experience. We focus on solutions that are clear to operate, designed to grow, and grounded in the way your teams work.</p>
             <ul>
-              <li><i class="bi bi-check2-all"></i> <span>We empower organizations to accelerate growth, improve productivity, and create seamless customer experiences.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>We believe in delivering innovative solutions tailored to your unique needs, and our goal is to ensure that every business we work with achieves sustainable success using Salesforce technology.</span></li>
-            
-               <!--  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span>
-              </li> -->
+              <li><i class="bi bi-check2-all"></i> <span><strong>Business-first discovery:</strong> we start with the people, processes, and outcomes that matter.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span><strong>Thoughtful delivery:</strong> we keep scope visible, decisions clear, and users involved.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span><strong>Support beyond launch:</strong> we help you maintain momentum after go-live.</span></li>
             </ul>
-            <!-- <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p> -->
           </div>
         </div>
 
@@ -261,46 +234,16 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
+    <section class="capabilities-strip" aria-label="Forcematica capabilities">
+      <div class="container">
+        <div class="row g-0 text-center">
+          <div class="col-6 col-lg-3"><span><i class="bi bi-kanban"></i> CRM strategy</span></div>
+          <div class="col-6 col-lg-3"><span><i class="bi bi-gear-wide-connected"></i> Automation</span></div>
+          <div class="col-6 col-lg-3"><span><i class="bi bi-arrow-left-right"></i> Integrations</span></div>
+          <div class="col-6 col-lg-3"><span><i class="bi bi-headset"></i> Ongoing support</span></div>
         </div>
-
       </div>
-
-    </section><!-- /Stats Section -->
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="services section light-background">
@@ -324,7 +267,8 @@
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
                 <h3>B2B Commerce Cloud</h3>
               </a>
-              <p>Accelerate B2B sales with self-service, digital commerce solutions powered by Salesforce.</p>
+              <p>Give buyers a simple self-service experience while helping sales teams move faster.</p>
+              <span class="service-fit">Best for: digital B2B growth</span>
             </div>
           </div><!-- End Service Item -->
 
@@ -336,7 +280,8 @@
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
                 <h3>Sales Cloud</h3>
               </a>
-              <p>Empower your sales team with automation, insights, and productivity tools.</p>
+              <p>Bring leads, opportunities, forecasting, and team activity into one clearer sales motion.</p>
+              <span class="service-fit">Best for: predictable revenue</span>
             </div>
           </div><!-- End Service Item -->
 
@@ -348,7 +293,8 @@
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
                 <h3>Service Cloud</h3>
               </a>
-              <p>Deliver world-class customer service experiences across every channel.</p>
+              <p>Help service teams resolve issues with the context, workflows, and knowledge they need.</p>
+              <span class="service-fit">Best for: stronger customer care</span>
             </div>
           </div><!-- End Service Item -->
 
@@ -360,7 +306,8 @@
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
                 <h3>Experience Cloud</h3>
               </a>
-              <p>Build portals and communities to connect customers, partners, and employees.</p>
+              <p>Create intuitive portals that keep customers, partners, and employees connected.</p>
+              <span class="service-fit">Best for: self-service at scale</span>
             </div>
           </div><!-- End Service Item -->
 
@@ -372,7 +319,8 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Salesforce CPQ</h3>
               </a>
-              <p>Automate complex pricing and quoting with powerful configuration tools.</p>
+              <p>Make complex pricing and quoting easier for teams, faster for buyers, and clearer for finance.</p>
+              <span class="service-fit">Best for: complex sales cycles</span>
             </div>
           </div><!-- End Service Item -->
 
@@ -384,7 +332,8 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>AppExchange Products</h3>
               </a>
-              <p>Choose from our suite of proven Salesforce-native apps or request a custom build.</p>
+              <p>Extend Salesforce with purposeful, Salesforce-native products or a custom solution.</p>
+              <span class="service-fit">Best for: extending Salesforce</span>
             </div>
           </div><!-- End Service Item -->
 
@@ -393,6 +342,42 @@
       </div>
 
     </section><!-- /Services Section -->
+
+    <section id="approach" class="delivery-process section">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Our approach</span>
+        <h2>A clear path from idea to impact</h2>
+        <p>Small decisions early make Salesforce delivery smoother, more useful, and easier to adopt.</p>
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="process-card">
+              <span class="process-number">01</span>
+              <i class="bi bi-search-heart"></i>
+              <h3>Discover</h3>
+              <p>We map your goals, blockers, users, and current process so everyone agrees on what success should look like.</p>
+            </article>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <article class="process-card">
+              <span class="process-number">02</span>
+              <i class="bi bi-layers"></i>
+              <h3>Design &amp; deliver</h3>
+              <p>We turn the plan into well-structured Salesforce work, with feedback and visibility at every meaningful milestone.</p>
+            </article>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <article class="process-card">
+              <span class="process-number">03</span>
+              <i class="bi bi-rocket-takeoff"></i>
+              <h3>Adopt &amp; improve</h3>
+              <p>After launch, we help your teams build confidence, learn from the data, and make the next improvement count.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio Section -->
 
@@ -756,16 +741,17 @@
     </section> -->
 
     <!-- Demo CTA Section -->
-    <section class="section">
+    <section class="section consultation-section">
       <div class="container">
-        <div class="demo-card p-4 p-lg-5" data-aos="fade-up">
+        <div class="consultation-cta p-4 p-lg-5" data-aos="fade-up">
           <div class="row align-items-center gy-4">
             <div class="col-lg-8">
-              <h3>Ready to see a better Salesforce experience?</h3>
-              <p class="mb-0">Let’s discuss your goals and map out a practical roadmap for implementation, automation, or support.</p>
+              <p class="eyebrow mb-2"><i class="bi bi-chat-square-dots"></i> Start with a practical conversation</p>
+              <h3>Ready to make Salesforce work harder for your business?</h3>
+              <p class="mb-0">Tell us where your teams are getting stuck. We’ll help you identify a useful next step—whether that’s strategy, delivery, integration, or support.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
-              <a href="#contact" class="btn-get-started">Request a Demo</a>
+              <a href="#contact" class="btn-get-started">Start the conversation <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -778,8 +764,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span>Contact Us</span>
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you. Please reach out with any inquiries.</p>
+        <h2>Let’s solve the right problem first</h2>
+        <p>Share a little about your Salesforce goals or challenges. We’ll reply with a practical next step.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -801,7 +787,7 @@
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+91-9610641354</p>
+                  <p><a href="tel:+919610641354">+91-9610641354</a></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -809,7 +795,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>forcematica@gmail.com</p>
+                  <p><a href="mailto:forcematica@gmail.com">forcematica@gmail.com</a></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -850,7 +836,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <label for="00NNS00002EA5dF" class="pb-2">Subject</label>
+                  <label for="00NNS00002EA5dF" class="pb-2">What can we help with?</label>
                   <input type="text" class="form-control" id="00NNS00002EA5dF" name="00NNS00002EA5dF" required>
                   <input style="display: none;" id="company" maxlength="40" name="company" value="forcematica website" size="20" type="text"><br>
                 </div>
@@ -867,6 +853,7 @@
                   <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
                   <button type="submit" name="submit">Send Message</button>
+                  <p class="form-response-note mb-0 mt-3">We typically respond within one business day.</p>
                 </div>
 
               </div>
@@ -940,10 +927,7 @@
           <h4>Follow Us</h4>
           <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
           <div class="social-links d-flex">
-            <!-- <a href="#"><i class="bi bi-twitter-x"></i></a> -->
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/forcematica/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/forcematica/" aria-label="Visit Forcematica on LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
