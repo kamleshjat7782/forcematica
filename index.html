@@ -47,13 +47,33 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-   
+    
       .hero {
         padding: 0px !important;
       }
       .hero, .section {
           padding-top: 0px;
        }
+
+      .demo-card {
+        border: 1px solid rgba(13, 110, 253, 0.12);
+        border-radius: 16px;
+        background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+        box-shadow: 0 12px 30px rgba(13, 110, 253, 0.08);
+        min-height: 100%;
+      }
+
+      .demo-card .icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(13, 110, 253, 0.1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #0d6efd;
+        margin-bottom: 12px;
+      }
   
   </style>
   
@@ -116,8 +136,8 @@
             <h1>Empowering Business with Salesforce</h1>
             <p>Forcematica delivers Salesforce-powered digital transformation</p>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="#contact" class="btn-watch-video d-flex align-items-center"><i class="bi bi-chat-left-text"></i><span>Talk to Us</span></a>
+              <a href="#contact" class="btn-get-started">Book a Discovery Call</a>
+              <a href="#services" class="btn-watch-video d-flex align-items-center"><i class="bi bi-chat-left-text"></i><span>Explore Services</span></a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
@@ -164,6 +184,41 @@
       </div>
 
     </section> -->
+
+    <!-- Demo Section -->
+    <section id="demo-section" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <span>What We Do Best</span>
+        <h2>Practical Salesforce Solutions</h2>
+        <p>From CRM strategy to implementation and support, we help teams unlock growth with smarter Salesforce experiences.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="demo-card p-4">
+              <div class="icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h3>Salesforce Strategy</h3>
+              <p>Align your CRM roadmap with business goals and unlock better visibility across sales and service teams.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="demo-card p-4">
+              <div class="icon"><i class="bi bi-boxes"></i></div>
+              <h3>Implementation & Automation</h3>
+              <p>Deploy scalable Salesforce solutions with process automation, workflow design, and clean data foundations.</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="demo-card p-4">
+              <div class="icon"><i class="bi bi-headset"></i></div>
+              <h3>Support & Optimization</h3>
+              <p>Keep your systems running smoothly with long-term support, enhancements, and performance tuning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -264,7 +319,6 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon">
-                <!-- <i class="bi bi-activity"></i> -->
                 <div class="icon mb-2"><i class="bi bi-cart-check"></i></div>
               </div>
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
@@ -277,7 +331,6 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <!-- <i class="bi bi-broadcast"></i> -->
                 <i class="bi bi-bar-chart-line"></i>
               </div>
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
@@ -291,7 +344,6 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-headset"></i>
-                <!-- <i class="bi bi-easel"></i> -->
               </div>
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
                 <h3>Service Cloud</h3>
@@ -303,28 +355,24 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <!-- <i class="bi bi-bounding-box-circles"></i> -->
                 <i class="bi bi-globe"></i>
               </div>
               <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
                 <h3>Experience Cloud</h3>
               </a>
               <p>Build portals and communities to connect customers, partners, and employees.</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <!-- <i class="bi bi-calendar4-week"></i> -->
                 <i class="bi bi-cash-coin"></i>
               </div>
-              <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
+              <a href="service-details.html" class="stretched-link">
                 <h3>Salesforce CPQ</h3>
               </a>
               <p>Automate complex pricing and quoting with powerful configuration tools.</p>
-              <a href="https://www.forcematica.com/service-details.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -332,13 +380,11 @@
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="bi bi-cloud-arrow-down"></i>
-                <!-- <i class="bi bi-chat-square-text"></i> -->
               </div>
-              <a href="https://www.forcematica.com/service-details.html" class="stretched-link">
+              <a href="service-details.html" class="stretched-link">
                 <h3>AppExchange Products</h3>
               </a>
               <p>Choose from our suite of proven Salesforce-native apps or request a custom build.</p>
-              <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -708,6 +754,23 @@
       </div>
 
     </section> -->
+
+    <!-- Demo CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="demo-card p-4 p-lg-5" data-aos="fade-up">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-8">
+              <h3>Ready to see a better Salesforce experience?</h3>
+              <p class="mb-0">Let’s discuss your goals and map out a practical roadmap for implementation, automation, or support.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn-get-started">Request a Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
