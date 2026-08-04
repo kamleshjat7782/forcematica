@@ -6,8 +6,9 @@
 (function () {
   "use strict";
 
-  // let forms = document.querySelectorAll('.php-email-form');
-  let forms ;
+  // Only forms explicitly marked for AJAX submission are handled here.
+  // Salesforce Web-to-Lead and standard HTML forms continue with normal submission.
+  const forms = document.querySelectorAll('.php-email-form[data-ajax="true"]');
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
       event.preventDefault();
